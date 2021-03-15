@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Quiz</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="score">
+            <a href="./highscore.html"><h4>View Highscore</h4></a>
+        </div>
+        <div class="time">
+            <h4>Time: <span id="timeLeft">0</span></h4>
+        </div>
+    </header>
+    <div id="start-menu">  
+        <h1>JavaScript Fundamentals Quiz</h1>
+        <button onclick="start()">Start Quiz</button>
+    </div>
+    <div id="quiz-content" class="hide">
+        <h2 id="question">PlaceHolder</h2>
+        <button id="option">Options</button>
+        <button id="option">Options</button>
+        <button id="option">Options</button>
+        <button id="option">Options</button>
+    </div>
+<div id="end-game" class="hide">
+    <h1>Game Over!</h1>
+    <h3>Your score is: <span id="player-score"></span></h3>
+    <input type="text" id="initials" placeholder="Enter Your Initials">
+    <a href="highscore.html"><button onclick="setScore()">Save Score!</button></a>
+    <a href="index.html"><button id="play-again">Play Again!</button></a>
+    <script src="assets/script.js"></script>
+</div>
+</body>
+
+</html>
